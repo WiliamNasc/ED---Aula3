@@ -8,7 +8,7 @@ public class Principal {
 		
 		SequentialList sQl = new SequentialList(5);
 		int num = Integer.parseInt(
-				JOptionPane.showInputDialog("Insira um n√∫mero"));
+				JOptionPane.showInputDialog("Insira um numero"));
 		
 		int vetor [] = new int [5];
 		
@@ -20,21 +20,30 @@ public class Principal {
 		
 		sQl.print();
 		
-		sQl.insert(4, 5);
-		sQl.insert(num, 1);
-		System.out.println(sQl.getSize());
-		
 		sQl.remove(4);
-		sQl.remove(2);
-		sQl.insert(10,2);
+		sQl.insert(4, 4);
+		sQl.remove(0);
+		sQl.insert(num, 0);
+		System.out.println("\n");
+		System.out.println("Tamanho da lista: = " + sQl.getSize());
+		System.out.println("\n");
+		sQl.remove(4);
+		sQl.insert(0, 4);
+		sQl.remove(1);
+		sQl.insert(10, 1);
 		
 		
-		for (int i = 0; i < 5; i++){
+		
+		for (int i = 0; i <= 4; i++){
 			
 			vetor[i] = sQl.get(i);
 			System.out.print("["+vetor[i]+"]");
-		}
-
+		} 
 	}
+	
+		
+	
+	} // uma lista È dinamica , quer dizer ela aumenta o seu tamanho de acordo com a necessidade
+	// diferente do vetor que tem um valor limitado.
 
-}
+

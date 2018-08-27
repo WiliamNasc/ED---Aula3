@@ -42,7 +42,7 @@ public class SequentialList {
 		
 		if(isEmpty()){
 			
-			System.out.println("Erro: a lista está vázia !!!");
+			System.out.println("Erro: a lista esta vazia !!!");
 			
 			return 0;
 			
@@ -51,7 +51,7 @@ public class SequentialList {
 		
 		if (index < 0 || index > last){
 			
-			System.out.println("Erro: a índice inválido !!!");
+			System.out.println("Erro: indice invalido !!!");
 		
 			return 0;
 		
@@ -74,7 +74,7 @@ public class SequentialList {
 	
 	public boolean insert (int element, int pos) {
 		
-		if (isFull() || pos <0 || pos > last + 1)
+		if (isFull() || pos < 0 || pos > last + 1)
 		
 			return false;
 		
@@ -119,7 +119,7 @@ public class SequentialList {
 		
 		for (int i = 0; i <= last; i++){
 			
-			System.out.println(list[i] + " ");
+			System.out.print(list[i] + " ");
 			
 		}
 	}
